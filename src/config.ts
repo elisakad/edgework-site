@@ -7,8 +7,9 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "Fuwari",
-	subtitle: "Demo Site",
+	title: "Edgework",
+	subtitle: "Living and Learning at the Edge of AI and Policy",
+	author: "Elisa Kadackal",
 	lang: "en", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -29,6 +30,11 @@ export const siteConfig: SiteConfig = {
 		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
 	},
 	favicon: [
+		{
+			src: "/favicon/lightbulb-favicon.png",
+			theme: "light",
+			sizes: "32x32",
+		},
 		// Leave this array empty to use the default favicon
 		// {
 		//   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
@@ -42,19 +48,31 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
+		//{ label: "🧠 About This Project", href: "/posts/draft" }, // Link to your draft page
 		LinkPreset.About,
+
+		{
+			name: "Edgework",
+			url: "/edgework",
+		},
 		{
 			name: "GitHub",
 			url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
+
+		{
+			name: "Substack",
+			url: "https://substack.com/@elisa878199",
+			external: true,
+		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "Lorem Ipsum",
-	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+	avatar: "assets/images/profile-pic.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "Elisa Kadackal",
+	bio: "Researching at the edge of Responsible AI, tech policy, and ethics.",
 	links: [
 		{
 			name: "Twitter",
@@ -64,9 +82,9 @@ export const profileConfig: ProfileConfig = {
 			url: "https://twitter.com",
 		},
 		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			name: "Substack",
+			icon: "fa6-solid:link",
+			url: "https://your-substack-name.substack.com",
 		},
 		{
 			name: "GitHub",
