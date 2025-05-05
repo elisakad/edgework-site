@@ -1,0 +1,21 @@
+---
+import Markdown from "@components/misc/Markdown.astro";
+// src/pages/index.astro
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import * as welcome from "../content/posts/welcome.md"; // Adjust path if needed
+
+const { Content, frontmatter } = welcome;
+---
+
+<MainGridLayout
+  banner={frontmatter.image}
+  title={frontmatter.title}
+  description={frontmatter.description}
+  lang={frontmatter.lang}
+  headings={[]}
+>
+  <Markdown class="markdown-content">
+    <Content />
+  </Markdown>
+</MainGridLayout>
+

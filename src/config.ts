@@ -44,7 +44,7 @@ export const siteConfig: SiteConfig = {
 	],
 };
 
-/*export const navBarConfig: NavBarConfig = {
+export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
@@ -67,18 +67,14 @@ export const siteConfig: SiteConfig = {
 			external: true,
 		},
 	],
-};*/
-export const navBarConfig: NavBarConfig = {
+};
+
+/*export const navBarConfig: NavBarConfig = {
 	links: [
-		/*{ name: "Home", url: "/posts/welcome/" }, // Add the trailing slash here
-		{ name: "Notebook", url: "/Notebook/" }, // Simpler nav label, full name on page itself
+		{ name: "Home", url: "/posts/welcome/" }, // Directs to your “Welcome to Edgework” draft
+		{ name: "Notebook", url: "/Notebook" }, // Simpler nav label, full name on page itself
 		LinkPreset.Archive,
 		LinkPreset.About,
-		*/
-		{ name: "Home", url: "/" },
-		{ name: "Edgework", url: "/edgework" },
-		{ name: "Posts", url: "/posts" }, // was previously "Notebook"
-
 		{
 			name: "GitHub",
 			url: "https://github.com/elisakad/edgework-site",
@@ -90,7 +86,7 @@ export const navBarConfig: NavBarConfig = {
 			external: true,
 		},
 	],
-};
+};*/
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/profile-pic.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
