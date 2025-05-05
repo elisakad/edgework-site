@@ -1,6 +1,6 @@
 ---
 title: Edgework
-layout: ../../layouts/Layout.astro
+layout: ../layouts/EdgeworkLayout.astro
 description: Living and Learning at the Edge of AI & Policy
 ---
 

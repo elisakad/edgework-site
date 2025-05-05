@@ -44,7 +44,7 @@ export const siteConfig: SiteConfig = {
 	],
 };
 
-export const navBarConfig: NavBarConfig = {
+/*export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
@@ -52,15 +52,38 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 
 		{
-			name: "Edgework",
-			url: "/edgework",
+			name: "The Edgework Notebook",
+			url: "/Notebook",
 		},
 		{
 			name: "GitHub",
-			url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
+			url: "https://github.com/elisakad/edgework-site", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 
+		{
+			name: "Substack",
+			url: "https://substack.com/@elisa878199",
+			external: true,
+		},
+	],
+};*/
+export const navBarConfig: NavBarConfig = {
+	links: [
+		/*{ name: "Home", url: "/posts/welcome/" }, // Add the trailing slash here
+		{ name: "Notebook", url: "/Notebook/" }, // Simpler nav label, full name on page itself
+		LinkPreset.Archive,
+		LinkPreset.About,
+		*/
+		{ name: "Home", url: "/" },
+		{ name: "Edgework", url: "/edgework" },
+		{ name: "Posts", url: "/posts" }, // was previously "Notebook"
+
+		{
+			name: "GitHub",
+			url: "https://github.com/elisakad/edgework-site",
+			external: true,
+		},
 		{
 			name: "Substack",
 			url: "https://substack.com/@elisa878199",
