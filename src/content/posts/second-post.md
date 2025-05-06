@@ -2,9 +2,9 @@
 title: "AI and the Global South: Redefining Risk and Responsibility"
 description: "Beyond Silicon Valley: Globalizing Responsible AI Risk Frameworks"
 tags: [Global AI, Responsible AI, AI Labor, Sociotechnical Futures]
-published: 2024-05-29
+published: 2024-05-01
 category: Essay
-draft: true
+draft: false
 ---
 As artificial intelligence technologies continue to permeate global society, it is crucial to consider how different cultures, societies, and economies define and approach AI risk. The current landscape of AI risk frameworks is overwhelmingly shaped by Western ideologies, particularly from the Global North, with a predominant focus on the needs, values, and concerns of wealthy, industrialized nations. However, this approach risks overlooking the diverse realities of Global South nations and marginalized communities, who may experience the risks and consequences of AI in ways that are distinct and disproportionate.
 

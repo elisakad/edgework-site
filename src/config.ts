@@ -52,12 +52,12 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 
 		{
-			name: "The Edgework Notebook",
-			url: "/Notebook",
+			name: "Edgework",
+			url: "/edgework",
 		},
 		{
 			name: "GitHub",
-			url: "https://github.com/elisakad/edgework-site", // Internal links should not include the base path, as it is automatically added
+			url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 
@@ -68,25 +68,6 @@ export const navBarConfig: NavBarConfig = {
 		},
 	],
 };
-
-/*export const navBarConfig: NavBarConfig = {
-	links: [
-		{ name: "Home", url: "/posts/welcome/" }, // Directs to your “Welcome to Edgework” draft
-		{ name: "Notebook", url: "/Notebook" }, // Simpler nav label, full name on page itself
-		LinkPreset.Archive,
-		LinkPreset.About,
-		{
-			name: "GitHub",
-			url: "https://github.com/elisakad/edgework-site",
-			external: true,
-		},
-		{
-			name: "Substack",
-			url: "https://substack.com/@elisa878199",
-			external: true,
-		},
-	],
-};*/
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/profile-pic.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'

@@ -4,7 +4,7 @@ description: "Invisible Architects: Moderator Wellbeing in AI-Driven Platforms"
 tags: [Ghost Work, Responsible AI, Worker Wellbeing, Pyschological Safety]
 published: 2024-06-29
 category: Case Study
-draft: true
+draft: false
 ---
 As AI systems scale across industries and borders, there is a growing blind spot in global policy: the wellbeing of human workers who quietly power these technologies behind the scenes. Among the most affected are content moderators, data annotators, and other “ghost workers” whose labor is essential to the functionality and safety of AI platforms, yet whose rights and health are often ignored in both public debate and regulatory frameworks.
 

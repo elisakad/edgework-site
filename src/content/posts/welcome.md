@@ -1,11 +1,11 @@
 ---
 slug: "/welcome"  # This ensures the page is at /welcome/
 title: "Welcome to Edgework: Living and Learning at the frontlines of AI and Policy"
-published: 2025-02-01
 description: "An exploration at the frontier of AI, ethics, and policy."
 tags: [Tech Policy, Blogging, Sociotechnical Futures, Ethics of Representation]
+published: 2025-02-01
 category: Introduction
-draft: true
+draft: false
 ---
 
 # A digital research journal exploring the legal, ethical, and human dimensions of AI governance.
