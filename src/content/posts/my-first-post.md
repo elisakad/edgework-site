@@ -1,12 +1,13 @@
 ---
 title: "The Future of AI Compliance: A Comparative Analysis of Global AI Safety Laws"
 description: "Crossing Borders: How France, the EU, and the U.S. Define and Enforce Responsible AI"
-image: "/images/cover.jpg"
-tags: [Comparative Regulation, Tech Policy, EU AI Act, Tech Sovereignty, Regulatory Philosophy]
+<img src="/images/workerWellbeing.jpg" alt="Wellbeing" style="max-width: 400px; border-radius: 8px;" />
+
+
+tags: [Comparative Regulation, Tech Policy, EU AI Act, Tech Sovereignty]
 published: 2024-04-29
 category: Essay
 draft: false
-
 ---
 As AI systems continue to expand across global markets, the need for robust, ethical governance is more pressing than ever. This comparative analysis delves into how three influential jurisdictions—the European Union, the United States, and France—are approaching AI compliance, examining their regulatory philosophies and enforcement mechanisms.
 

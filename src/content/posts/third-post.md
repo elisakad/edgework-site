@@ -1,6 +1,7 @@
 ---
 title: "Policy Frameworks for Worker Wellbeing in AI Ecosystems"
 description: "Invisible Architects: Moderator Wellbeing in AI-Driven Platforms"
+image: "/images/workerSafety.jpg"
 tags: [Ghost Work, Responsible AI, Worker Wellbeing, Pyschological Safety]
 published: 2024-06-29
 category: Case Study

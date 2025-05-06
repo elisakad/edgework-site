@@ -47,14 +47,14 @@ export const siteConfig: SiteConfig = {
 export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
+		LinkPreset.About,
 		LinkPreset.Archive,
 		//{ label: "🧠 About This Project", href: "/posts/draft" }, // Link to your draft page
-		LinkPreset.About,
 
-		{
-			name: "Edgework",
-			url: "/edgework",
-		},
+		//{
+		//	name: "Edgework",
+		//	url: "/edgework",
+		//},
 		{
 			name: "GitHub",
 			url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
