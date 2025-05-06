@@ -48,6 +48,10 @@ if (isLocal) {
 
 const imageClass = className ?? "w-full h-full object-cover";
 const imageStyle = Astro.props.style ?? `object-position: ${position}`;
+/*^This tells Astro:
+Use a custom class if provided (class="post-image")
+Use a custom style if passed (style="max-width: 400px")
+*/
 ---
 <div id={id} class:list={[className, 'overflow-hidden relative']}>
     <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>
