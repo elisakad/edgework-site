@@ -24,8 +24,10 @@ export default defineConfig({
 	//base: '/edgework-site/',
 	//base: "/",
 	//output: "static",
-	output: "static",
-	base: "/edgework-site/", // repo name goes here
+	//output: "static",
+	//base: "/edgework-site/", // repo name goes here
+	site: "https://elisakad.github.io",
+	base: "/",
 	trailingSlash: "always",
 	integrations: [
 		tailwind({
