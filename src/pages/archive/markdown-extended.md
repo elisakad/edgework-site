@@ -1,58 +1,57 @@
 ---
 title: Markdown Extended Features
 published: 2024-05-01
-updated: 2024-11-29
-description: 'Read more about Markdown features in Fuwari'
+updated: 2025-05-13
+description: 'Explore advanced Markdown features used across Edgework'
 image: ''
-tags: [Demo, Example, Markdown, Fuwari]
-category: 'Examples'
+tags: [Edgework, Example, Markdown, Astro]
+category: 'Edgework Notes'
 draft: false 
 ---
 
 ## GitHub Repository Cards
-You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API. 
+You can embed dynamic GitHub repository cards in your posts. These cards fetch repo info via the GitHub API and render it live.
 
-::github{repo="Fabrizz/MMM-OnSpotify"}
+::github{repo="elisakad/edgework-site"}
 
-Create a GitHub repository card with the code `::github{repo="<owner>/<repo>"}`.
+Create a GitHub repository card with the code:
 
 ```markdown
 ::github{repo="elisakad/edgework-site"}
-```
 
 ## Admonitions
 
 Following types of admonitions are supported: `note` `tip` `important` `warning` `caution`
 
 :::note
-Highlights information that users should take into account, even when skimming.
+Highlights information that readers should take note of, even when skimming.
 :::
 
 :::tip
-Optional information to help a user be more successful.
+Optional advice that helps readers apply or understand something better.
 :::
 
 :::important
-Crucial information necessary for users to succeed.
+Essential information needed for clarity or success.
 :::
 
 :::warning
-Critical content demanding immediate user attention due to potential risks.
+Critical insight demanding immediate attention.
 :::
 
 :::caution
-Negative potential consequences of an action.
+Flags potential negative outcomes or caveats.
 :::
 
 ### Basic Syntax
 
 ```markdown
 :::note
-Highlights information that users should take into account, even when skimming.
+Highlights information that readers should take into account, even when skimming.
 :::
 
 :::tip
-Optional information to help a user be more successful.
+Optional advice that helps readers apply or understand something better.
 :::
 ```
 
@@ -60,13 +59,14 @@ Optional information to help a user be more successful.
 
 The title of the admonition can be customized.
 
-:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
+:::note[Field Reflection]
+This note captures a key insight from working at the intersection of Responsible AI and content moderation.
 :::
+
 
 ```markdown
 :::note[MY CUSTOM TITLE]
-This is a note with a custom title.
+Note with customized title.
 :::
 ```
 
@@ -77,8 +77,8 @@ This is a note with a custom title.
 
 ```
 > [!NOTE]
-> The GitHub syntax is also supported.
+> You can also use GitHub syntax for notes.
 
 > [!TIP]
-> The GitHub syntax is also supported.
+> This is a GitHub-style tip box.
 ```

@@ -1,40 +1,44 @@
 ---
-title: Simple Guides for Fuwari
+title: Simple Guides for Edgework
 published: 2025-03-01
-description: "How to use this blog template."
+description: "How to write and organize posts for the Edgework digital notebook."
 image: "./cover.jpeg"
-tags: ["Fuwari", "Blogging", "Customization"]
+tags: ["Edgework", "Writing Guide", "Astro"]
 category: Guides
 draft: false
 ---
 
 > Cover image source: [Source](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg)
 
-This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
+This site is built with [Astro](https://astro.build/) and serves as a portfolio and field notebook for my project **Edgework**. For advanced configurations, consult the [Astro Docs](https://docs.astro.build/).
 
-## Front-matter of Posts
+---
+
+## 📝 Frontmatter for Edgework Posts
+
+Each post starts with structured frontmatter that helps organize and display content correctly:
 
 ```yaml
 ---
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
+title: Algorithmic Ghosts
+published: 2025-03-15
+description: A reflection on invisible labor in Responsible AI.
 image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
+tags: [Responsible AI, Ethics, Autoethnography]
+category: Edgework Essays
 draft: false
 ---
 ```
 
 | Attribute     | Description                                                                                                                                                                                                 |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `title`       | The title of the post.                                                                                                                                                                                      |
-| `published`   | The date the post was published.                                                                                                                                                                            |
-| `description` | A short description of the post. Displayed on index page.                                                                                                                                                   |
-| `image`       | The cover image path of the post.<br/>1. Start with `http://` or `https://`: Use web image<br/>2. Start with `/`: For image in `public` dir<br/>3. With none of the prefixes: Relative to the markdown file |
-| `tags`        | The tags of the post.                                                                                                                                                                                       |
-| `category`    | The category of the post.                                                                                                                                                                                   |
-| `draft`        | If this post is still a draft, which won't be displayed.                                                                                                                                                    |
+| `title`       | The post title as it will appear on the site.                                                                                                                                                                                      |
+| `published`   | The publication date (format: YYYY-MM-DD).                                                                                                                                                                   |
+| `description` | Short summary of the post. Displayed on homepage and lists.                                                                                                                                                   |
+| `image`       | Cover image path:<br/>• http(s):// = remote image<br/>• / = from public/ folder<br/>• Otherwise = relative to the markdown file |
+| `tags`        | Keywords that describe the content. Used for filtering and discovery.                                                                                                                                                                                       |
+| `category`    | Groups the post under a major theme (e.g. Edgework Essays, Reflections, Interviews).                                                                                                                                                                                   |
+| `draft`        | 	If true, the post will not appear on the public site. Useful for drafts or future work.                                                                                                                                                    |
 
 ## Where to Place the Post Files
 
@@ -44,8 +48,8 @@ Your post files should be placed in `src/content/posts/` directory. You can also
 
 ```
 src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.png
+├── algorithmic-ghosts.md
+└── ai-interview/
+    ├── image.png
     └── index.md
 ```
