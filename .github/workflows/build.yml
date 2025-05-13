@@ -2,36 +2,30 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # Change if your default branch is different
-
-permissions:
-  contents: write
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '16'  # Use Node.js version 16.x
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        # No need to specify version here
-        with:
-          run_install: true  # Automatically runs `pnpm install`
+      - name: Install dependencies with pnpm
+        run: pnpm install
 
-      - name: Build the Astro site
-        run: pnpm run build
+      - name: Build the site
+        run: pnpm build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./dist
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # Adjust this based on your build output folder
