@@ -1,8 +1,12 @@
 ---
 title: "AI and the Global South: Redefining Risk and Responsibility"
 description: "Beyond Silicon Valley: Globalizing Responsible AI Risk Frameworks"
-image: "/images/workerWellbeing.jpg",
-tags: [Global AI, Responsible AI, AI Labor, Sociotechnical Futures]
+image: "/images/workerWellbeing.jpg"
+tags: 
+  - "Global AI"
+  - "Responsible AI"
+  - "AI Labor"
+  - "Sociotechnical Futures"
 published: 2024-05-01
 category: Essay
 draft: false
