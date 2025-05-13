@@ -2,7 +2,7 @@
 
 A creative, research-driven portfolio built with [Astro](https://astro.build). This site is the public-facing home of **Edgework**, a project exploring the intersection of technology, policy, law, and lived experience. Designed as both a journal and portfolio, it showcases essays, research, and reflections from the edge of Responsible AI.
 
-![Site Preview](/sunset-south-france2.png)
+![Site Preview](/sunset-south-france3.png)
 
 ✍️ Built and maintained by Elisa, a technologist, writer, and researcher.
 
