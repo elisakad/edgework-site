@@ -1,7 +1,7 @@
 ---
-title: Edgework
-layout: ../../layouts/Layout.astro
-description: Living and Learning at the Edge of AI & Policy
+title: "Edgework"
+layout: "../layouts/Layout.astro"
+description: "Living and Learning at the Edge of AI & Policy"
 ---
 
 <section class="prose mx-auto px-4 py-8">
