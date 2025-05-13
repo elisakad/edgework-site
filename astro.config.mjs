@@ -22,6 +22,8 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 export default defineConfig({
 	site: "https://elisakad.github.io/edgework-site/",
 	//base: '/edgework-site/',
+	base: "/",
+	output: "static",
 	trailingSlash: "always",
 	integrations: [
 		tailwind({
