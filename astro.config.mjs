@@ -20,7 +20,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://elisakad.github.io/edgework-site/",
+	site: "https://edgework-site.vercel.app/",
 	//base: '/edgework-site/',
 	base: "/",
 	output: "static",
