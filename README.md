@@ -1,13 +1,14 @@
 # 🌐 Edgework – A Digital Field Notebook by Elisa
 
-A creative, research-driven portfolio built with [Astro](https://astro.build). This site is the public-facing home of **Edgework**, my self-designed project exploring the intersection of technology, policy, law, and lived experience. 
+A creative, research-driven portfolio built with [Astro](https://astro.build). This site is the public-facing home of **Edgework**, my self-designed project exploring the the nexus of technology, policy, and human experience.
 
 ✍️ Built and maintained by Elisa, a technologist, writer, and researcher.
 
 ![Site Preview](/sunset-south-france3.png)
 
 ## 🧠 About Edgework
-> “Edgework” is a sociological term that refers to working at the boundary—of disciplines, of systems, of stories.  
+> “Edgework” is a sociological term that refers to working at the boundary—of disciplines, of systems, of stories. 
+ 
 > This project explores the **edges of AI policy**, content governance, legal theory, and ethical tech,  
 > driven by personal experience in industry and curiosity about the systems shaping our digital future.
 
