@@ -22,8 +22,8 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
+        # No need to specify version here
         with:
-          version: 9
           run_install: true  # Automatically runs `pnpm install`
 
       - name: Build the Astro site
