@@ -2,9 +2,10 @@
 slug: "/welcome"  # This ensures the page is at /welcome/
 title: "Welcome to Edgework: Living and Learning at the frontlines of AI and Policy"
 description: "An exploration at the frontier of AI, ethics, and policy."
+pinned: true
 image: "/images/babyElisa.jpg"
 tags: [Tech Policy, Blogging, Sociotechnical Futures, Ethics of Representation]
-published: 2025-02-01
+published: 2025-05-09
 category: Introduction
 draft: false
 ---

@@ -7,12 +7,20 @@ interface Props {
 	alt?: string;
 	position?: string;
 	basePath?: string;
-	style?: string; // ✅ Add this
+	size?: string; // NEW
 }
 import { Image } from "astro:assets";
 import { url } from "../../utils/url-utils";
 
-const { id, src, alt, position = "center", basePath = "/" } = Astro.props;
+const {
+	id,
+	src,
+	alt,
+	position = "center",
+	basePath = "/",
+	size = "default", // NEW
+} = Astro.props;
+
 const className = Astro.props.class;
 
 const isLocal = !(
@@ -23,10 +31,9 @@ const isLocal = !(
 );
 const isPublic = src.startsWith("/");
 
-// TODO temporary workaround for images dynamic import
-// https://github.com/withastro/astro/issues/3373
-// biome-ignore lint/suspicious/noImplicitAnyLet: <explanation>
-let img;
+// Handle dynamic imports for local images
+// TypeScript error because Astro is expecting img to possibly not be assigned during runtime — and by explicitly saying ImageMetadata | undefined, you're covering that edge case.
+let img: ImageMetadata | undefined;
 if (isLocal) {
 	const files = import.meta.glob<ImageMetadata>("../../**", {
 		import: "default",
@@ -43,19 +50,17 @@ if (isLocal) {
 	img = await file();
 }
 
-//const imageClass = "w-full h-full object-cover";
-//const imageStyle = `object-position: ${position}`;
-
-const imageClass = className ?? "w-full h-full object-cover";
-const imageStyle = Astro.props.style ?? `object-position: ${position}`;
-/*^This tells Astro:
-Use a custom class if provided (class="post-image")
-Use a custom style if passed (style="max-width: 400px")
-*/
+// NEW: Adjust class for different image sizes
+const sizeClass = size === "small" ? "max-w-[400px] mx-auto" : "w-full";
+const imageClass = `${sizeClass} h-full object-cover`;
+const imageStyle = `object-position: ${position}`;
+// max-w-[400px] keeps the image under 600px. you can adjust this value to your needs
+// mx-auto centers it
+// These utility classes do not touch your global stylesheets, and Tailwind will purge them unless used.
 ---
+
 <div id={id} class:list={[className, 'overflow-hidden relative']}>
     <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>
-    {isLocal && img && <Image src={img} alt={alt || ""} class={imageClass} style={imageStyle}/>}
-    {!isLocal && <img src={isPublic ? url(src) : src} alt={alt || ""} class={imageClass} style={imageStyle}/>}
+    {isLocal && img && <Image src={img} alt={alt || ""} class={imageClass} style={imageStyle} />}
+    {!isLocal && <img src={isPublic ? url(src) : src} alt={alt || ""} class={imageClass} style={imageStyle} />}
 </div>
-

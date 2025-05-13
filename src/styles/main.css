@@ -156,3 +156,26 @@
     height: var(--collapsedHeight);
 }
 
+.post-cover-image {
+    max-width: 50%;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 1rem;
+  }
+
+  .reflection-box {
+    background-color: #f5f5fa;
+    border-left: 4px solid #7a7aff;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .reflection-box h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #333366;
+  }
+  

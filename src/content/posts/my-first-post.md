@@ -1,18 +1,18 @@
 ---
-title: "The Future of AI Compliance: A Comparative Analysis of Global AI Safety Laws"
-description: "Crossing Borders: How France, the EU, and the U.S. Define and Enforce Responsible AI"
-<img src="/images/workerWellbeing.jpg" alt="Wellbeing" style="max-width: 400px; border-radius: 8px;" />
-
-
-tags: [Comparative Regulation, Tech Policy, EU AI Act, Tech Sovereignty]
-published: 2024-04-29
+title: "AI and the Global South: Redefining Risk and Responsibility"
+description: "Beyond Silicon Valley: Globalizing Responsible AI Risk Frameworks"
+image: "/images/workerWellbeing.jpg",
+tags: [Global AI, Responsible AI, AI Labor, Sociotechnical Futures]
+published: 2024-05-01
 category: Essay
 draft: false
 ---
-As AI systems continue to expand across global markets, the need for robust, ethical governance is more pressing than ever. This comparative analysis delves into how three influential jurisdictions—the European Union, the United States, and France—are approaching AI compliance, examining their regulatory philosophies and enforcement mechanisms.
 
-In the European Union, the AI Act represents one of the most comprehensive efforts to regulate AI, focusing on risk-based frameworks that classify AI systems into categories based on their potential harm. The EU's proactive stance not only emphasizes transparency and accountability but also advocates for human rights, data protection, and social responsibility. This contrasts sharply with the U.S. sectoral approach, where AI regulations are fragmented across industries, offering a more decentralized and market-driven model. While the U.S. approach prioritizes innovation, it risks leaving gaps in accountability and ethics, particularly in sensitive areas like facial recognition and automated decision-making.
 
-France, through its Commission Nationale de l'Informatique et des Libertés (CNIL), takes a unique approach by blending EU regulations with a strong focus on individual rights and data privacy. The CNIL’s guidelines provide a framework for ethical AI development, focusing on ensuring that AI systems are not only legally compliant but also aligned with democratic values and human dignity.
+As artificial intelligence technologies continue to permeate global society, it is crucial to consider how different cultures, societies, and economies define and approach AI risk. The current landscape of AI risk frameworks is overwhelmingly shaped by Western ideologies, particularly from the Global North, with a predominant focus on the needs, values, and concerns of wealthy, industrialized nations. However, this approach risks overlooking the diverse realities of Global South nations and marginalized communities, who may experience the risks and consequences of AI in ways that are distinct and disproportionate.
 
-This paper will explore the implications of these regulatory frameworks for AI development, particularly with regard to marginalized workers such as content moderators and data annotators. These workers, often invisible in the AI ecosystem, are tasked with ensuring the accuracy and fairness of AI systems—yet, they remain vulnerable to exploitation without sufficient regulatory protections. By comparing the strengths and weaknesses of these regulatory models, this analysis aims to offer insights into how global AI safety laws can evolve to better protect both the technology and the workers who make it possible.
+This paper will take a postcolonial perspective on AI risk taxonomies, exploring how Global South nations—and by extension, marginalized communities within Europe—define and respond to AI risks. Drawing on examples from regions with varying levels of technological infrastructure, economic development, and social inequality, we will explore how these communities might prioritize risks that are often sidelined in Western frameworks, such as data sovereignty, cultural bias, economic exploitation, and AI-driven inequality.
+
+For instance, in many parts of the Global South, data colonialism—the extraction and exploitation of data from developing nations—has become a critical issue. These nations often lack the regulatory capacity to protect their data or assert control over how their citizens' data is used by multinational AI companies. Additionally, the imposition of Western-centric AI models can undermine local values, traditional knowledge systems, and cultural norms, leading to AI systems that are misaligned with the needs and priorities of local populations.
+
+By examining the historical and ongoing power dynamics at play in AI development and deployment, this paper will argue for the creation of more inclusive AI risk frameworks—ones that do not default to Western assumptions or prioritize the interests of the Global North. These frameworks should engage with local stakeholders, incorporate regional knowledge, and prioritize justice, equity, and sustainability. By shifting away from a one-size-fits-all approach, we can begin to create AI systems that are truly global in scope, while respecting and uplifting the voices and concerns of those most impacted by AI technologies.
