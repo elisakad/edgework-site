@@ -1,0 +1,59 @@
+<!DOCTYPE html><meta charset="utf-8"><link rel="stylesheet" href="/edgework-site/_astro/_page_.CcIx3F_4.css"><script type="module" src="/edgework-site/_astro/page.Og3RKNzp.js"></script><section><h2 id="github-repository-cards">GitHub Repository Cards<a class="anchor" href="#github-repository-cards"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><p>You can embed dynamic GitHub repository cards in your posts. These cards fetch repo info via the GitHub API and render it live.</p><a id="GCx56wcb-card" class="card-github fetch-waiting no-styling" href="https://github.com/elisakad/edgework-site" target="_blank" repo="elisakad/edgework-site"><div class="gc-titlebar"><div class="gc-titlebar-left"><div class="gc-owner"><div id="GCx56wcb-avatar" class="gc-avatar"></div><div class="gc-user">elisakad</div></div><div class="gc-divider">/</div><div class="gc-repo">edgework-site</div></div><div class="github-logo"></div></div><div id="GCx56wcb-description" class="gc-description">Waiting for api.github.com...</div><div class="gc-infobar"><div id="GCx56wcb-stars" class="gc-stars">00K</div><div id="GCx56wcb-forks" class="gc-forks">0K</div><div id="GCx56wcb-license" class="gc-license">0K</div><span id="GCx56wcb-language" class="gc-language">Waiting...</span></div><script id="GCx56wcb-script" type="text/javascript" defer>
+      fetch('https://api.github.com/repos/elisakad/edgework-site', { referrerPolicy: "no-referrer" }).then(response => response.json()).then(data => {
+        document.getElementById('GCx56wcb-description').innerText = data.description?.replace(/:[a-zA-Z0-9_]+:/g, '') || "Description not set";
+        document.getElementById('GCx56wcb-language').innerText = data.language;
+        document.getElementById('GCx56wcb-forks').innerText = Intl.NumberFormat('en-us', { notation: "compact", maximumFractionDigits: 1 }).format(data.forks).replaceAll(" ", '');
+        document.getElementById('GCx56wcb-stars').innerText = Intl.NumberFormat('en-us', { notation: "compact", maximumFractionDigits: 1 }).format(data.stargazers_count).replaceAll(" ", '');
+        const avatarEl = document.getElementById('GCx56wcb-avatar');
+        avatarEl.style.backgroundImage = 'url(' + data.owner.avatar_url + ')';
+        avatarEl.style.backgroundColor = 'transparent';
+        document.getElementById('GCx56wcb-license').innerText = data.license?.spdx_id || "no-license";
+        document.getElementById('GCx56wcb-card').classList.remove("fetch-waiting");
+        console.log("[GITHUB-CARD] Loaded card for elisakad/edgework-site | GCx56wcb.")
+      }).catch(err => {
+        const c = document.getElementById('GCx56wcb-card');
+        c?.classList.add("fetch-error");
+        console.warn("[GITHUB-CARD] (Error) Loading card for elisakad/edgework-site | GCx56wcb.")
+      })
+    </script></a><p>Create a GitHub repository card with the code:</p><pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">::github{repo="elisakad/edgework-site"}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Admonitions</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Following types of admonitions are supported: </span><span style="color:#79B8FF">`note`</span><span style="color:#79B8FF"> `tip`</span><span style="color:#79B8FF"> `important`</span><span style="color:#79B8FF"> `warning`</span><span style="color:#79B8FF"> `caution`</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">:::note</span></span>
+<span class="line"><span style="color:#E1E4E8">Highlights information that readers should take note of, even when skimming.</span></span>
+<span class="line"><span style="color:#E1E4E8">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">:::tip</span></span>
+<span class="line"><span style="color:#E1E4E8">Optional advice that helps readers apply or understand something better.</span></span>
+<span class="line"><span style="color:#E1E4E8">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">:::important</span></span>
+<span class="line"><span style="color:#E1E4E8">Essential information needed for clarity or success.</span></span>
+<span class="line"><span style="color:#E1E4E8">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">:::warning</span></span>
+<span class="line"><span style="color:#E1E4E8">Critical insight demanding immediate attention.</span></span>
+<span class="line"><span style="color:#E1E4E8">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">:::caution</span></span>
+<span class="line"><span style="color:#E1E4E8">Flags potential negative outcomes or caveats.</span></span>
+<span class="line"><span style="color:#E1E4E8">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">### Basic Syntax</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">```markdown</span></span>
+<span class="line"><span style="color:#E1E4E8">:::note</span></span>
+<span class="line"><span style="color:#E1E4E8">Highlights information that readers should take into account, even when skimming.</span></span>
+<span class="line"><span style="color:#E1E4E8">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">:::tip</span></span>
+<span class="line"><span style="color:#E1E4E8">Optional advice that helps readers apply or understand something better.</span></span>
+<span class="line"><span style="color:#E1E4E8">:::</span></span></code></pre><section><h3 id="custom-titles">Custom Titles<a class="anchor" href="#custom-titles"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><p>The title of the admonition can be customized.</p><blockquote class="admonition bdm-note"><span class="bdm-title"><div>Field Reflection</div></span><p>This note captures a key insight from working at the intersection of Responsible AI and content moderation.</p></blockquote><pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">:::note[MY CUSTOM TITLE]</span></span>
+<span class="line"><span style="color:#E1E4E8">Note with customized title.</span></span>
+<span class="line"><span style="color:#E1E4E8">:::</span></span></code></pre></section><section><h3 id="github-syntax">GitHub Syntax<a class="anchor" href="#github-syntax"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><blockquote class="admonition bdm-tip"><span class="bdm-title">TIP</span><p><a href="https://github.com/orgs/community/discussions/16925">The GitHub syntax</a> is also supported.</p></blockquote><pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>> [!NOTE]</span></span>
+<span class="line"><span>> You can also use GitHub syntax for notes.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>> [!TIP]</span></span>
+<span class="line"><span>> This is a GitHub-style tip box.</span></span></code></pre></section></section>

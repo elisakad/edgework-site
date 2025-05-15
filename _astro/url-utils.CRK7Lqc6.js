@@ -1,0 +1,1 @@
+import"./zh_TW.DRG4CRH9.js";function i(e,o){const n=e.replace(/^\/|\/$/g,"").toLowerCase(),r=o.replace(/^\/|\/$/g,"").toLowerCase();return n===r}function t(...e){return e.join("/").replace(/\/+/g,"/")}function c(e){return t("","/edgework-site/",e)}export{i as p,c as u};
