@@ -1,8 +1,8 @@
 # 🌐 Edgework – A Digital Field Notebook by Elisa
 
-A creative, research-driven portfolio built with [Astro](https://astro.build). This site is the public-facing home of **Edgework**, my self-designed project exploring the the nexus of technology, policy, and human experience- rooted in my deep curiosity for how people shape and are shaped by digital systems.
+A creative, research-driven portfolio built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com) 🚀. This site is the public-facing home of **Edgework**, my self-designed project exploring the the nexus of technology, policy, and human experience- rooted in my deep curiosity for how people shape and are shaped by digital systems.
 
-✍️ Built and maintained by Elisa, a technologist, writer, and researcher.
+✍️🎨 Built and maintained by Elisa, a technologist, writer, and researcher.✨🔍
 
 ![Site Preview](/sunset-south-france3.png)
 
@@ -18,18 +18,5 @@ The site is a live portfolio meant to grow over time, featuring my:
 - Autoethnographic reflections on work and industry 
 - Analyses of user-centered technologies and sociotechnical systems
 - Links to longer writings hosted on Substack or Notion
-
----
-
-## ✨ The Code: What’s Included
-
-- 🚀 Powered by [Astro](https://astro.build) & [Tailwind CSS](https://tailwindcss.com)
-- 🌙 Light / dark mode toggle  
-- 🌀 Smooth page transitions and animations  
-- 🧭 Responsive and clean layout  
-- 🎨 Custom colors and banner support  
-- 🔍 Built-in search functionality  
-- 📝 Markdown-based content management  
-- 🗂️ Structured layout for essays, reflections, and research
 
 ---
