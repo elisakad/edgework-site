@@ -1,15 +1,15 @@
 ---
-title: Nagivating The Moral Crumple Zone in AI Safety Work
-published: 2025-05-01
-description: "The Nuance of Morale Injury In the RAI Ecosystem"
+title: "Holding the Line: The Moral Crumple Zone in AI and Safety Work"
+published: 2025-04-21
+description: "Bridging technical implementation with policy thinking to create AI systems that prioritize safety, empathy, and trust."
 image: "./existential-pic.jpg"
-tags: ["Morale Crumple Zone", "AI Safety"]
+tags: ["Moral Injury", "Human-Centered AI"]
 category: Essay
 draft: false
 ---
 
 
-In the world of AI governance, safety testing, and content oversight, many of us operate in what sociotechnical researcher Madeleine Elish calls the moral crumple zone—the space where humans are positioned to absorb blame or responsibility when complex systems falter.
+IIn the world of AI governance, safety testing, and content oversight, many of us operate in what sociotechnical researcher Madeleine Elish calls the moral crumple zone—the space where humans are positioned to absorb blame or responsibility when complex systems falter.
 
 This dynamic plays out in subtle, cumulative ways. The people doing red teaming, moderation design, or risk assessment often carry the emotional and ethical load of making sense of harms that aren't always clear-cut, especially in spaces where automation and ambiguity meet. These roles—while essential—can become pressure points when accountability isn't evenly distributed across the sociotechnical stack.
 

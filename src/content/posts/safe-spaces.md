@@ -3,7 +3,7 @@ title: "The Crucial Role of Safe Spaces in Content Moderator Wellness and Produc
 description: "A Literature Review: Exploring safe spaces as framework for worker wellness in AI Governance"
 image: "/images/safe-space.png"
 tags: [Global AI, Responsible AI, AI Labor, Sociotechnical Futures]
-published: 2025-05-02
+published: 2025-05-01
 category: Research
 draft: false
 ---
