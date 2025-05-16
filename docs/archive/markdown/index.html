@@ -1,0 +1,85 @@
+<!DOCTYPE html><meta charset="utf-8"><link rel="stylesheet" href="/edgework-site/_astro/_page_.CcIx3F_4.css"><script type="module" src="/edgework-site/_astro/page.Og3RKNzp.js"></script><section><h1 id="an-h1-header">An h1 header<a class="anchor" href="#an-h1-header"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h1><p>Paragraphs are separated by a blank line.</p><p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
+look like:</p><ul>
+<li>this one</li>
+<li>that one</li>
+<li>the other one</li>
+</ul><p>Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.</p><blockquote>
+<p>Block quotes are
+written like so.</p>
+<p>They can span multiple paragraphs,
+if you like.</p>
+</blockquote><p>Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., “it’s all
+in chapters 12—14”). Three dots … will be converted to an ellipsis.
+Unicode is supported. ☺</p><section><h2 id="an-h2-header">An h2 header<a class="anchor" href="#an-h2-header"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><p>Here’s a numbered list:</p><ol>
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+</ol><p>Note again how the actual text starts at 4 columns in (4 characters
+from the left side). Here’s a code sample:</p><pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span># Let me re-iterate ...</span></span>
+<span class="line"><span>for i in 1 .. 10 { do-something(i) }</span></span></code></pre><p>As you probably guessed, indented 4 spaces. By the way, instead of
+indenting the block, you can use delimited blocks, if you like:</p><pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>define foobar() {</span></span>
+<span class="line"><span>    print "Welcome to flavor country!";</span></span>
+<span class="line"><span>}</span></span></code></pre><p>(which makes copying &#x26; pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight it:</p><pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#F97583">import</span><span style="color:#E1E4E8"> time</span></span>
+<span class="line"><span style="color:#6A737D"># Quick, count to ten!</span></span>
+<span class="line"><span style="color:#F97583">for</span><span style="color:#E1E4E8"> i </span><span style="color:#F97583">in</span><span style="color:#79B8FF"> range</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#6A737D">    # (but not *too* quick)</span></span>
+<span class="line"><span style="color:#E1E4E8">    time.sleep(</span><span style="color:#79B8FF">0.5</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#79B8FF">    print</span><span style="color:#E1E4E8"> i</span></span></code></pre><section><h3 id="an-h3-header">An h3 header<a class="anchor" href="#an-h3-header"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><p>Now a nested list:</p><ol>
+<li>
+<p>First, get these ingredients:</p>
+<ul>
+<li>carrots</li>
+<li>celery</li>
+<li>lentils</li>
+</ul>
+</li>
+<li>
+<p>Boil some water.</p>
+</li>
+<li>
+<p>Dump everything in the pot and follow
+this algorithm:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span> find wooden spoon</span></span>
+<span class="line"><span> uncover pot</span></span>
+<span class="line"><span> stir</span></span>
+<span class="line"><span> cover pot</span></span>
+<span class="line"><span> balance wooden spoon precariously on pot handle</span></span>
+<span class="line"><span> wait 10 minutes</span></span>
+<span class="line"><span> goto first step (or shut off burner when done)</span></span></code></pre>
+<p>Do not bump wooden spoon or it will fall.</p>
+</li>
+</ol><p>Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3 above).</p><p>Here’s a link to <a href="http://foo.bar">a website</a>, to a <a href="local-doc.html">local
+doc</a>, and to a <a href="#an-h2-header">section heading in the current
+doc</a>. Here’s a footnote <sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>.</p><p>Tables can look like this:</p><p>size material color</p><hr><p>9 leather brown
+10 hemp canvas natural
+11 glass transparent</p><p>Table: Shoes, their sizes, and what they’re made of</p><p>(The above is the caption for the table.) Pandoc also supports
+multi-line tables:</p><hr><p>keyword text</p><hr><p>red Sunsets, apples, and
+other red or reddish
+things.</p><p>green Leaves, grass, frogs
+and other things it’s
+not easy being.</p><hr><p>A horizontal rule follows.</p><hr><p>Here’s a definition list:</p><p>apples
+: Good for making applesauce.
+oranges
+: Citrus!
+tomatoes
+: There’s no “e” in tomatoe.</p><p>Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out more.)</p><p>Here’s a “line block”:</p><p>| Line one
+| Line too
+| Line tree</p><p>and images can be specified like so:</p><p>Inline math equations go in like so: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mi>d</mi><mi>ϕ</mi><mi mathvariant="normal">/</mi><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\omega = d\phi / dt</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ω</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">ϕ</span><span class="mord">/</span><span class="mord mathnormal">d</span><span class="mord mathnormal">t</span></span></span></span>. Display
+math should get its own line and be put in in double-dollarsigns:</p><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mo>∫</mo><mi>ρ</mi><msup><mi>R</mi><mn>2</mn></msup><mi>d</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">I = \int \rho R^{2} dV</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1202em;vertical-align:-0.3061em;"></span><span class="mop op-symbol small-op" style="margin-right:0.19445em;position:relative;top:-0.0006em;">∫</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">ρ</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mord mathnormal">d</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span></p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.16em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mi>π</mi><mo>=</mo><mn>3.1415926535</mn><mtext>  </mtext><mn>8979323846</mn><mtext>  </mtext><mn>2643383279</mn><mtext>  </mtext><mn>5028841971</mn><mtext>  </mtext><mn>6939937510</mn><mtext>  </mtext><mn>5820974944</mn><mtext>  </mtext><mn>5923078164</mn><mtext>  </mtext><mn>0628620899</mn><mtext>  </mtext><mn>8628034825</mn><mtext>  </mtext><mn>3421170679</mn><mtext>  </mtext><mo>…</mo></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{equation*}
+\pi
+=3.1415926535
+ \;8979323846\;2643383279\;5028841971\;6939937510\;5820974944
+ \;5923078164\;0628620899\;8628034825\;3421170679\;\ldots
+\end{equation*}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2em;vertical-align:-0.35em;"></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.85em;"><span style="top:-3.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">π</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">3.1415926535</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">8979323846</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">2643383279</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">5028841971</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">6939937510</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">5820974944</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">5923078164</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">0628620899</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">8628034825</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">3421170679</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.35em;"><span></span></span></span></span></span></span></span></span></span></span></span><p>And note that you can backslash-escape any punctuation characters
+which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p></section></section></section>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes<a class="anchor" href="#footnote-label"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2>
+<ol>
+<li id="user-content-fn-1">
+<p>Footnote text goes here. <a href="#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>

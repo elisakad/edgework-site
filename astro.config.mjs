@@ -24,6 +24,7 @@ export default defineConfig({
 	base: "/edgework-site/", // <-- Updated from "/" to match GitHub repo name
 	output: "static",
 	trailingSlash: "always",
+	outDir: "./docs", // <-- Updated from "./dist" to "./docs" for GitHub Pages
 
 	integrations: [
 		tailwind({

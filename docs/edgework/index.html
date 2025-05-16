@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en" class="bg-[var(--page-bg)] transition text-[14px] md:text-[16px]" data-overlayscrollbars-initialize data-astro-cid-sckkx6r4 style="--bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 250;--page-width: 75rem;"> <head><title>Edgework - Living and Learning at the Edge of AI and Policy</title><meta charset="UTF-8"><meta name="description" content="Edgework - Living and Learning at the Edge of AI and Policy"><meta name="author" content="Elisa Kadackal"><meta property="og:site_name" content="Edgework"><meta property="og:url" content="https://elisakad.github.io/edgework-site/edgework/"><meta property="og:title" content="Edgework - Living and Learning at the Edge of AI and Policy"><meta property="og:description" content="Edgework - Living and Learning at the Edge of AI and Policy"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://elisakad.github.io/edgework-site/edgework/"><meta name="twitter:title" content="Edgework - Living and Learning at the Edge of AI and Policy"><meta name="twitter:description" content="Edgework - Living and Learning at the Edge of AI and Policy"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v5.7.13"><link rel="icon" href="/edgework-site/favicon/lightbulb-favicon.png" sizes="32x32" media="(prefers-color-scheme: light)"><!-- Set the theme before the page is rendered to avoid a flash --><script>(function(){const DEFAULT_THEME = "auto";
+const LIGHT_MODE = "light";
+const DARK_MODE = "dark";
+const AUTO_MODE = "auto";
+const BANNER_HEIGHT_EXTEND = 30;
+const PAGE_WIDTH = 75;
+const configHue = 250;
+
+			// Load the theme from local storage
+			const theme = localStorage.getItem('theme') || DEFAULT_THEME;
+			switch (theme) {
+				case LIGHT_MODE:
+					document.documentElement.classList.remove('dark');
+					break
+				case DARK_MODE:
+					document.documentElement.classList.add('dark');
+					break
+				case AUTO_MODE:
+					if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+						document.documentElement.classList.add('dark');
+					} else {
+						document.documentElement.classList.remove('dark');
+					}
+			}
+
+			// Load the hue from local storage
+			const hue = localStorage.getItem('hue') || configHue;
+			document.documentElement.style.setProperty('--hue', hue);
+
+			// calculate the --banner-height-extend, which needs to be a multiple of 4 to avoid blurry text
+			let offset = Math.floor(window.innerHeight * (BANNER_HEIGHT_EXTEND / 100));
+			offset = offset - offset % 4;
+			document.documentElement.style.setProperty('--banner-height-extend', `${offset}px`);
+		})();</script><!-- defines global css variables. This will be applied to <html> <body> and some other elements idk why --><link rel="alternate" type="application/rss+xml" title="Elisa Kadackal" href="https://elisakad.github.io/rss.xml"><link rel="stylesheet" href="/edgework-site/_astro/Layout.DSulWsr7.css">
+<link rel="stylesheet" href="/edgework-site/_astro/Layout.BuewHHUq.css">
+<link rel="stylesheet" href="/edgework-site/_astro/_page_.CcIx3F_4.css">
+<link rel="stylesheet" href="/edgework-site/_astro/_page_.DKCMOZUt.css"><script type="module" src="/edgework-site/_astro/page.Og3RKNzp.js"></script></head> <body class=" min-h-screen transition " data-overlayscrollbars-initialize data-astro-cid-sckkx6r4 style="--bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 250;--page-width: 75rem;"> <div id="config-carrier" data-hue="250"></div> <section class="prose mx-auto px-4 py-8">
+  <h1 class="text-4xl font-bold mb-4">Edgework</h1>
+  <p class="text-xl text-gray-600 mb-8">
+    Living and Learning at the Edge of AI &#x26; Policy
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Reflections -->
+    <a href="/reflections" class="block bg-white shadow-md hover:shadow-lg transition p-6 rounded-2xl">
+      <h2 class="text-2xl font-semibold">🪞 Reflections</h2>
+      <p class="text-gray-600">Autoethnographic writing and lived experience from inside tech systems.</p>
+    </a>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>&#x3C;!-- Essays --></span></span>
+<span class="line"><span>&#x3C;a href="/essays" class="block bg-white shadow-md hover:shadow-lg transition p-6 rounded-2xl"></span></span>
+<span class="line"><span>  &#x3C;h2 class="text-2xl font-semibold">📚 Essays&#x3C;/h2></span></span>
+<span class="line"><span>  &#x3C;p class="text-gray-600">Research-informed explorations of AI policy, ethics, and systems.&#x3C;/p></span></span>
+<span class="line"><span>&#x3C;/a></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;!-- Case Studies --></span></span>
+<span class="line"><span>&#x3C;a href="/cases" class="block bg-white shadow-md hover:shadow-lg transition p-6 rounded-2xl"></span></span>
+<span class="line"><span>  &#x3C;h2 class="text-2xl font-semibold">📁 Mini Case Studies&#x3C;/h2></span></span>
+<span class="line"><span>  &#x3C;p class="text-gray-600">Narratives and examples from industry, research, and compliance work.&#x3C;/p></span></span>
+<span class="line"><span>&#x3C;/a></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;!-- Interviews --></span></span>
+<span class="line"><span>&#x3C;a href="/interviews" class="block bg-white shadow-md hover:shadow-lg transition p-6 rounded-2xl"></span></span>
+<span class="line"><span>  &#x3C;h2 class="text-2xl font-semibold">🎙️ Interviews&#x3C;/h2></span></span>
+<span class="line"><span>  &#x3C;p class="text-gray-600">Q&#x26;A with AI builders, policymakers, and scholars.&#x3C;/p></span></span>
+<span class="line"><span>&#x3C;/a></span></span></code></pre>
+  </div>
+  <hr class="my-10">
+  <div class="space-y-4 text-center">
+    <p class="text-gray-600">More from Edgework:</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="https://edgework.substack.com" class="underline text-blue-600">📰 Substack Essays</a>
+      <a href="https://www.notion.so/" class="underline text-blue-600">📓 Field Notes (Notion)</a>
+      <a href="/about" class="underline text-blue-600">🧠 About This Project</a>
+    </div>
+  </div>
+</section> <!-- increase the page height during page transition to prevent the scrolling animation from jumping --> <div id="page-height-extend" class="hidden h-[300vh]" data-astro-cid-sckkx6r4 style="--bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 250;--page-width: 75rem;"></div>  <script type="module" src="/edgework-site/_astro/Layout.astro_astro_type_script_index_0_lang.UAx2jhg4.js"></script> <script type="module" src="/edgework-site/_astro/Layout.astro_astro_type_script_index_1_lang.BylsDo0f.js"></script></body></html>
