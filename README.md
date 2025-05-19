@@ -20,9 +20,9 @@ The site is a live portfolio meant to grow over time, featuring my:
 - Links to longer writings hosted on Substack or Notion
 
 ## 🛠️ Tech Stack & Tooling
-🖥️ Code Editor: Visual Studio Code (VSCode)
-🌐 Framework: Astro — Static site generator for fast, content-focused sites
-🔤 Languages: TypeScript, HTML, Markdown, CSS
+- Code Editor: Visual Studio Code (VSCode)
+- Framework: Astro — Static site generator for fast, content-focused sites
+- Languages: TypeScript, HTML, Markdown, CSS
 🎨 Styling: Tailwind CSS, custom CSS modules
 🧠 Content Management: Markdown-based posts with frontmatter metadata
 ⚙️ Version Control: Git & GitHub (with GitHub Pages deployment)
