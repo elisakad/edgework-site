@@ -1,5 +1,6 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "extends": ["biome:recommended"],
   "vcs": {
     "enabled": false,
     "clientKind": "git",
@@ -11,21 +12,14 @@
   },
   "formatter": {
     "enabled": true,
-    "indentStyle": "tab"
+    "indentStyle": "tab",
+    "quoteStyle": "double"
   },
   "organizeImports": {
     "enabled": true
   },
   "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true
-    }
-  },
-  "javascript": {
-    "formatter": {
-      "quoteStyle": "double"
-    }
+    "enabled": true
   },
   "overrides": [
     {
