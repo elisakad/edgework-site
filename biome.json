@@ -1,6 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "extends": ["biome:recommended"],
+  "$schema": "https://biomejs.dev/schemas/2.1.3/schema.json",
   "vcs": {
     "enabled": false,
     "clientKind": "git",
@@ -8,22 +7,19 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["src/**/*.css","src/public/**/*", "dist/**/*", "node_modules/**/*"]
+    "includes": ["src/**/*.js", "src/**/*.ts", "*.svelte", "*.astro", "*.vue"]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "tab",
     "quoteStyle": "double"
   },
-  "organizeImports": {
-    "enabled": true
-  },
   "linter": {
     "enabled": true
   },
   "overrides": [
     {
-      "include": ["*.svelte", "*.astro", "*.vue"],
+      "includes": ["*.svelte", "*.astro", "*.vue"],
       "linter": {
         "rules": {
           "style": {
