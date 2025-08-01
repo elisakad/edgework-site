@@ -2,7 +2,7 @@
 title: "Reverberations In The Digital Cathedral"
 published: 2024-06-02
 description: "An Autoethnographic Reflection on the Content Governance World"
-image: "./collectiveValues.jpg"
+image: "./digitalcathedral.jpg"
 tags: ["ResponsibleAI", "DigitalLabor", "ValuesByDesign"]
 category: Essay
 draft: false
