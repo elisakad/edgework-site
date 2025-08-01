@@ -11,8 +11,12 @@
   },
   "formatter": {
     "enabled": true,
-    "indentStyle": "tab",
-    "quoteStyle": "double"
+    "indentStyle": "tab"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
   },
   "linter": {
     "enabled": true
