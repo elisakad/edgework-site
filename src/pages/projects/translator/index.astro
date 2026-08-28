@@ -1,0 +1,292 @@
+---
+import MainGridLayout from "../../../layouts/MainGridLayout.astro";
+---
+
+<MainGridLayout
+    title="Edgework Translation Desk"
+    description="Make unfamiliar AI policy, legal, technical, and governance information understandable."
+>
+    <section class="space-y-6">
+
+        <!-- Header -->
+        <div class="max-w-3xl">
+            <div class="text-sm uppercase tracking-[0.18em] text-[var(--primary)] mb-3">
+                Edgework Project
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-bold text-90 mb-4">
+                Translation Desk
+            </h1>
+
+            <p class="text-xl md:text-2xl text-75 leading-relaxed">
+                Make unfamiliar AI policy, legal, technical, and governance
+                language easier to understand.
+            </p>
+        </div>
+
+        <!-- Main tool -->
+        <div class="card-base p-5 md:p-8">
+
+            <form id="translation-form" class="space-y-6">
+
+                <div>
+                    <label
+                        for="material"
+                        class="block text-sm font-medium text-90 mb-2"
+                    >
+                        What are you looking at?
+                    </label>
+
+                    <textarea
+                        id="material"
+                        name="material"
+                        rows="7"
+                        placeholder="Paste a passage, headline, policy language, or describe what you encountered..."
+                        class="w-full rounded-xl border border-black/10 dark:border-white/10 bg-black/[0.02] dark:bg-white/[0.03] px-4 py-3 text-90 outline-none focus:ring-2 focus:ring-[var(--primary)] resize-y"
+                        required
+                    ></textarea>
+                </div>
+
+                <div>
+                    <label
+                        for="question"
+                        class="block text-sm font-medium text-90 mb-2"
+                    >
+                        What are you trying to understand?
+                    </label>
+
+                    <textarea
+                        id="question"
+                        name="question"
+                        rows="4"
+                        placeholder="What is confusing, unclear, or important to you?"
+                        class="w-full rounded-xl border border-black/10 dark:border-white/10 bg-black/[0.02] dark:bg-white/[0.03] px-4 py-3 text-90 outline-none focus:ring-2 focus:ring-[var(--primary)] resize-y"
+                        required
+                    ></textarea>
+                </div>
+
+                <div>
+                    <label
+                        for="source-url"
+                        class="block text-sm font-medium text-90 mb-2"
+                    >
+                        Source link
+                        <span class="font-normal text-black/40 dark:text-white/40">
+                            (optional)
+                        </span>
+                    </label>
+
+                    <input
+                        id="source-url"
+                        name="source-url"
+                        type="url"
+                        placeholder="https://..."
+                        class="w-full rounded-xl border border-black/10 dark:border-white/10 bg-black/[0.02] dark:bg-white/[0.03] px-4 py-3 text-90 outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                    />
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-1">
+                    <button
+                        type="submit"
+                        class="btn-regular-dark rounded-xl px-6 py-3 font-medium text-white"
+                    >
+                        Translate this encounter →
+                    </button>
+
+                    <div class="text-sm text-black/40 dark:text-white/40">
+                        Context first. Answer second.
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Result -->
+        <div id="translation-result" class="card-base p-6 md:p-8 hidden">
+            <div class="text-sm uppercase tracking-[0.15em] text-[var(--primary)] mb-3">
+                Edgework Translation
+            </div>
+
+            <div id="translation-output" class="prose dark:prose-invert max-w-none text-75"></div>
+        </div>
+
+        <!-- Method note -->
+        <div class="grid md:grid-cols-3 gap-4">
+
+            <div class="card-base p-5">
+                <div class="text-sm font-semibold text-90 mb-2">
+                    1. Identify
+                </div>
+                <p class="text-sm text-75">
+                    Determine what kind of information the question actually requires.
+                </p>
+            </div>
+
+            <div class="card-base p-5">
+                <div class="text-sm font-semibold text-90 mb-2">
+                    2. Find
+                </div>
+                <p class="text-sm text-75">
+                    Use appropriate sources when the answer depends on evidence,
+                    policy, law, or technical documentation.
+                </p>
+            </div>
+
+            <div class="card-base p-5">
+                <div class="text-sm font-semibold text-90 mb-2">
+                    3. Translate
+                </div>
+                <p class="text-sm text-75">
+                    Explain the result in accessible language without stripping
+                    away important context or uncertainty.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="text-sm text-black/45 dark:text-white/45 max-w-2xl">
+            Edgework is an educational and research prototype designed to improve
+            understanding of AI-related information. It is not a substitute for
+            professional legal advice.
+        </div>
+
+    </section>
+</MainGridLayout>
+
+<script>
+
+    function renderTranslation(text) {
+        const output = document.getElementById("translation-output");
+
+        if (!output) return;
+
+        output.replaceChildren();
+
+        const normalized = text.trim();
+
+        const matches = [...normalized.matchAll(
+            /(?:^|\n)(?:#+\s*)?(WHAT THIS MEANS|WHY IT MATTERS|CONTEXT)\s*\n/gi
+        )];
+
+        if (matches.length === 0) {
+            const paragraph = document.createElement("p");
+            paragraph.className = "text-75 leading-7";
+            paragraph.textContent = normalized;
+            output.appendChild(paragraph);
+            return;
+        }
+
+        for (let i = 0; i < matches.length; i++) {
+            const heading = matches[i][1].toUpperCase();
+            const contentStart =
+                (matches[i].index ?? 0) + matches[i][0].length;
+
+            const contentEnd =
+                i + 1 < matches.length
+                    ? (matches[i + 1].index ?? normalized.length)
+                    : normalized.length;
+
+            const body = normalized
+                .slice(contentStart, contentEnd)
+                .trim();
+
+            if (!body) continue;
+
+            const wrapper = document.createElement("section");
+            wrapper.className = "mb-8 last:mb-0";
+
+            const title = document.createElement("h3");
+            title.className =
+                "text-lg font-semibold text-90 mb-3";
+            title.textContent = heading;
+
+            const paragraph = document.createElement("p");
+            paragraph.className =
+                "text-75 leading-7 whitespace-pre-wrap";
+            paragraph.textContent = body;
+
+            wrapper.appendChild(title);
+            wrapper.appendChild(paragraph);
+            output.appendChild(wrapper);
+        }
+    }
+
+    function setupTranslationDesk() {
+        const form = document.getElementById("translation-form");
+        const result = document.getElementById("translation-result");
+        const output = document.getElementById("translation-output");
+
+        if (!form || !result || !output) return;
+        if (form.dataset.translationReady === "true") return;
+
+        form.dataset.translationReady = "true";
+
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            const material =
+                form.querySelector("#material")?.value.trim();
+
+            const question =
+                form.querySelector("#question")?.value.trim();
+
+            const sourceUrl =
+                form.querySelector("#source-url")?.value.trim();
+
+            if (!material || !question) return;
+
+            result.classList.remove("hidden");
+            output.textContent = "Translating your encounter…";
+
+            try {
+                const response = await fetch(
+                    "http://localhost:8787/translate",
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                            material,
+                            question,
+                            url: sourceUrl || undefined,
+                        }),
+                    },
+                );
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(
+                        data?.details ||
+                        data?.error ||
+                        "The Translation Desk could not complete the request.",
+                    );
+                }
+
+                renderTranslation(
+                    data.translation ||
+                    "No translation was returned."
+                );
+
+            } catch (error) {
+                console.error("Translation Desk error:", error);
+
+                output.textContent =
+                    "The Translation Desk could not complete the translation. Please try again.";
+            }
+        });
+    }
+
+    setupTranslationDesk();
+
+    document.addEventListener("swup:enable", () => {
+        if (window.swup?.hooks) {
+            window.swup.hooks.on("page:view", setupTranslationDesk);
+        }
+    });
+
+    if (window.swup?.hooks) {
+        window.swup.hooks.on("page:view", setupTranslationDesk);
+    }
+</script>

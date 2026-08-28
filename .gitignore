@@ -25,3 +25,8 @@ pnpm-debug.log*
 package-lock.json
 bun.lockb
 yarn.lock
+
+# Cloudflare Workers local secrets
+.dev.vars*
+
+.wrangler/

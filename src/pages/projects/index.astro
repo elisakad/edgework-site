@@ -1,0 +1,96 @@
+---
+import MainGridLayout from "../../layouts/MainGridLayout.astro";
+import { url } from "../../utils/url-utils";
+---
+
+<MainGridLayout
+    title="Projects"
+    description="Research, prototypes, and experiments at the intersection of AI, technology, policy, and people."
+>
+    <section class="space-y-6">
+
+        <div>
+            <p class="text-sm uppercase tracking-[0.18em] text-black/40 dark:text-white/40 mb-2">
+                Selected work
+            </p>
+
+            <h1 class="text-4xl font-bold text-90 mb-3">
+                Projects
+            </h1>
+
+            <p class="text-lg text-75 max-w-2xl">
+                Things I’ve built, tested, and investigated where technical systems
+                meet the institutions and people they affect.
+            </p>
+        </div>
+
+        <a
+            href={url("/projects/translator/")}
+            class="card-base block p-7 md:p-9 hover:-translate-y-0.5 transition-all"
+        >
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+                <div class="max-w-2xl">
+                    <div class="text-sm uppercase tracking-[0.15em] text-[var(--primary)] mb-3">
+                        Featured project
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-90 mb-3">
+                        Edgework Translation Desk
+                    </h2>
+
+                    <p class="text-lg text-75 mb-4">
+                        A human-centered AI research prototype for translating
+                        unfamiliar AI policy, legal, technical, and governance
+                        information into understandable context.
+                    </p>
+
+                    <p class="text-75">
+                        The question behind the project:
+                        <em>
+                            When an AI-related system, rule, or claim crosses into
+                            someone’s world, how can we help them understand not
+                            only what it says, but why it matters?
+                        </em>
+                    </p>
+                </div>
+
+                <div class="shrink-0 btn-regular rounded-xl px-5 py-3 font-medium">
+                    Open Translation Desk →
+                </div>
+
+            </div>
+        </a>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div class="card-base p-6 opacity-70">
+                <div class="text-sm uppercase tracking-[0.15em] text-black/40 dark:text-white/40 mb-2">
+                    Coming next
+                </div>
+                <h3 class="text-xl font-semibold text-90 mb-2">
+                    Research + Evaluation
+                </h3>
+                <p class="text-75">
+                    Experiments, evaluations, and empirical work exploring how
+                    people interact with AI systems and governance frameworks.
+                </p>
+            </div>
+
+            <div class="card-base p-6 opacity-70">
+                <div class="text-sm uppercase tracking-[0.15em] text-black/40 dark:text-white/40 mb-2">
+                    Coming next
+                </div>
+                <h3 class="text-xl font-semibold text-90 mb-2">
+                    Other Edgework Experiments
+                </h3>
+                <p class="text-75">
+                    Future prototypes at the intersection of technology,
+                    policy, ethics, and human experience.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+</MainGridLayout>

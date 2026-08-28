@@ -45,28 +45,28 @@ export const siteConfig: SiteConfig = {
 };
 
 export const navBarConfig: NavBarConfig = {
-	links: [
-		LinkPreset.Home,
-		LinkPreset.About,
-		LinkPreset.Archive,
-		//{ label: "🧠 About This Project", href: "/posts/draft" }, // Link to your draft page
-
-		//{
-		//	name: "Edgework",
-		//	url: "/edgework",
-		//},
-		{
-			name: "GitHub",
-			url: "https://github.com/elisakad/edgework-site", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
-
-		{
-			name: "Substack",
-			url: "https://substack.com/@elisa878199",
-			external: true,
-		},
-	],
+        links: [
+                LinkPreset.Home,
+                LinkPreset.About,
+                {
+                        name: "Projects",
+                        url: "/projects/",
+                },
+                {
+                        name: "Writing",
+                        url: "/archive/",
+                },
+                {
+                        name: "GitHub",
+                        url: "https://github.com/elisakad/edgework-site",
+                        external: true,
+                },
+                {
+                        name: "Substack",
+                        url: "https://substack.com/@elisa878199",
+                        external: true,
+                },
+        ],
 };
 
 export const profileConfig: ProfileConfig = {

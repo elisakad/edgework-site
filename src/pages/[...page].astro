@@ -20,6 +20,7 @@ import Pagination from "../components/control/Pagination.astro";
 import { PAGE_SIZE } from "../constants/constants";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 import { getSortedPosts } from "../utils/content-utils";
+import { url } from "../utils/url-utils";
 
 export const getStaticPaths = (async ({ paginate }) => {
 	const allBlogPosts = await getSortedPosts();
@@ -48,10 +49,40 @@ const len = page.data.length;
 ---
 
 <MainGridLayout>
-	<PostPage page={page} />
-	<Pagination
-		class="mx-auto onload-animation"
-		page={page}
-		style={`animation-delay: calc(var(--content-delay) + ${len * 50}ms)`}
-	/>
+
+        <a
+                href={url("/projects/translator/")}
+                class="card-base block p-6 md:p-8 mb-4 hover:-translate-y-0.5 transition-all"
+        >
+                <div class="text-sm uppercase tracking-[0.15em] text-[var(--primary)] mb-2">
+                        Featured Project
+                </div>
+
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+                        <div>
+                                <h2 class="text-2xl md:text-3xl font-bold text-90 mb-2">
+                                        Edgework Translation Desk
+                                </h2>
+
+                                <p class="text-75 max-w-2xl">
+                                        A human-centered AI research prototype for making
+                                        unfamiliar AI policy, legal, technical, and governance
+                                        information understandable.
+                                </p>
+                        </div>
+
+                        <div class="btn-regular rounded-xl px-5 py-3 font-medium shrink-0">
+                                Open Desk →
+                        </div>
+                </div>
+        </a>
+
+        <PostPage page={page} />
+
+        <Pagination
+                class="mx-auto onload-animation"
+                page={page}
+                style={`animation-delay: calc(var(--content-delay) + ${len * 50}ms)`}
+        />
+
 </MainGridLayout>
