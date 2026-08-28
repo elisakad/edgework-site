@@ -1,19 +1,19 @@
-<!DOCTYPE html><meta charset="utf-8"><link rel="stylesheet" href="/edgework-site/_astro/_page_.CcIx3F_4.css"><script type="module" src="/edgework-site/_astro/page.Og3RKNzp.js"></script><section><h2 id="github-repository-cards">GitHub Repository Cards<a class="anchor" href="#github-repository-cards"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><p>You can embed dynamic GitHub repository cards in your posts. These cards fetch repo info via the GitHub API and render it live.</p><a id="GCt71xhq-card" class="card-github fetch-waiting no-styling" href="https://github.com/elisakad/edgework-site" target="_blank" repo="elisakad/edgework-site"><div class="gc-titlebar"><div class="gc-titlebar-left"><div class="gc-owner"><div id="GCt71xhq-avatar" class="gc-avatar"></div><div class="gc-user">elisakad</div></div><div class="gc-divider">/</div><div class="gc-repo">edgework-site</div></div><div class="github-logo"></div></div><div id="GCt71xhq-description" class="gc-description">Waiting for api.github.com...</div><div class="gc-infobar"><div id="GCt71xhq-stars" class="gc-stars">00K</div><div id="GCt71xhq-forks" class="gc-forks">0K</div><div id="GCt71xhq-license" class="gc-license">0K</div><span id="GCt71xhq-language" class="gc-language">Waiting...</span></div><script id="GCt71xhq-script" type="text/javascript" defer>
+<!DOCTYPE html><meta charset="utf-8"><link rel="stylesheet" href="/edgework-site/_astro/_page_.CcIx3F_4.css"><script type="module" src="/edgework-site/_astro/page.Og3RKNzp.js"></script><section><h2 id="github-repository-cards">GitHub Repository Cards<a class="anchor" href="#github-repository-cards"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><p>You can embed dynamic GitHub repository cards in your posts. These cards fetch repo info via the GitHub API and render it live.</p><a id="GCewbm7l-card" class="card-github fetch-waiting no-styling" href="https://github.com/elisakad/edgework-site" target="_blank" repo="elisakad/edgework-site"><div class="gc-titlebar"><div class="gc-titlebar-left"><div class="gc-owner"><div id="GCewbm7l-avatar" class="gc-avatar"></div><div class="gc-user">elisakad</div></div><div class="gc-divider">/</div><div class="gc-repo">edgework-site</div></div><div class="github-logo"></div></div><div id="GCewbm7l-description" class="gc-description">Waiting for api.github.com...</div><div class="gc-infobar"><div id="GCewbm7l-stars" class="gc-stars">00K</div><div id="GCewbm7l-forks" class="gc-forks">0K</div><div id="GCewbm7l-license" class="gc-license">0K</div><span id="GCewbm7l-language" class="gc-language">Waiting...</span></div><script id="GCewbm7l-script" type="text/javascript" defer>
       fetch('https://api.github.com/repos/elisakad/edgework-site', { referrerPolicy: "no-referrer" }).then(response => response.json()).then(data => {
-        document.getElementById('GCt71xhq-description').innerText = data.description?.replace(/:[a-zA-Z0-9_]+:/g, '') || "Description not set";
-        document.getElementById('GCt71xhq-language').innerText = data.language;
-        document.getElementById('GCt71xhq-forks').innerText = Intl.NumberFormat('en-us', { notation: "compact", maximumFractionDigits: 1 }).format(data.forks).replaceAll(" ", '');
-        document.getElementById('GCt71xhq-stars').innerText = Intl.NumberFormat('en-us', { notation: "compact", maximumFractionDigits: 1 }).format(data.stargazers_count).replaceAll(" ", '');
-        const avatarEl = document.getElementById('GCt71xhq-avatar');
+        document.getElementById('GCewbm7l-description').innerText = data.description?.replace(/:[a-zA-Z0-9_]+:/g, '') || "Description not set";
+        document.getElementById('GCewbm7l-language').innerText = data.language;
+        document.getElementById('GCewbm7l-forks').innerText = Intl.NumberFormat('en-us', { notation: "compact", maximumFractionDigits: 1 }).format(data.forks).replaceAll(" ", '');
+        document.getElementById('GCewbm7l-stars').innerText = Intl.NumberFormat('en-us', { notation: "compact", maximumFractionDigits: 1 }).format(data.stargazers_count).replaceAll(" ", '');
+        const avatarEl = document.getElementById('GCewbm7l-avatar');
         avatarEl.style.backgroundImage = 'url(' + data.owner.avatar_url + ')';
         avatarEl.style.backgroundColor = 'transparent';
-        document.getElementById('GCt71xhq-license').innerText = data.license?.spdx_id || "no-license";
-        document.getElementById('GCt71xhq-card').classList.remove("fetch-waiting");
-        console.log("[GITHUB-CARD] Loaded card for elisakad/edgework-site | GCt71xhq.")
+        document.getElementById('GCewbm7l-license').innerText = data.license?.spdx_id || "no-license";
+        document.getElementById('GCewbm7l-card').classList.remove("fetch-waiting");
+        console.log("[GITHUB-CARD] Loaded card for elisakad/edgework-site | GCewbm7l.")
       }).catch(err => {
-        const c = document.getElementById('GCt71xhq-card');
+        const c = document.getElementById('GCewbm7l-card');
         c?.classList.add("fetch-error");
-        console.warn("[GITHUB-CARD] (Error) Loading card for elisakad/edgework-site | GCt71xhq.")
+        console.warn("[GITHUB-CARD] (Error) Loading card for elisakad/edgework-site | GCewbm7l.")
       })
     </script></a><p>Create a GitHub repository card with the code:</p><pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">::github{repo="elisakad/edgework-site"}</span></span>
 <span class="line"></span>

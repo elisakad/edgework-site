@@ -1,15 +1,15 @@
-name: Deploy to GitHub Pages
+name: Test Edgework Build
 
 on:
   push:
     branches:
-      - main
+      - edgework-rebuild
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,9 +31,3 @@ jobs:
 
       - name: Build Astro site
         run: pnpm build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
